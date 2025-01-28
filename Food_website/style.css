@@ -1,0 +1,107 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#banner{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 15%;
+    align-items: center;
+}
+
+/* #navbar{
+    box-sizing: content-box;
+    overflow: scroll hidden;
+    scrollbar-width: none;
+    min-width: 100%;
+} */
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    /* margin-left: 0px; */
+  }
+
+.scrollable {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    overflow-y: hidden; /* Prevent vertical scroll */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+  }
+
+.scroll-btn {
+    position: absolute;
+    /* background-color: rgba(241, 241, 241, 0.5); */
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    /* padding: 10px; */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    /* margin-left: 0px; */
+}
+
+.left-btn {
+    left: 0;
+}
+  
+.right-btn {
+    right: 0;
+}
+
+#navbar img{
+    max-height: 100px;
+}
+
+/* #navbar section :hover{
+    box-shadow:5px 5px 5px 5px rgb(150, 150, 150);
+    border-radius: 5px;
+} */
+
+#cards{
+    min-width: 15%;
+}
+
+#cards:hover {
+    /* box-shadow:2px 2px 2px rgb(150, 150, 150);  */
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 200ms;
+}
+
+#collections{
+    align-items: center;
+}
+
+/* #cart{
+    position: rative;
+    z-index: 1;
+    margin-right: 0px;
+} */
+
+#collection_img {
+    position: relative;
+}
+
+#collection_info {
+    position: absolute;
+    bottom: 10px;
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+}
+
+#cart-position {
+    bottom:0;
+    right:0;
+}

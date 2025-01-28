@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>QuickBite</title>
+</head>
+<body>
+    <!-- text alig center not working  -->
+    <header class="d-flex justify-content-around text-align-center p-2 bg-dark text-white">
+        <a href="../index.html"><</a>
+        <div>
+            <a href="./index.html" class="text-decoration-none">
+                <h4 class="text-white">QuickBite</h4>
+            </a>
+        </div>
+        <input class="rounded-3 w-50" type="text" placeholder="Search">
+        <div>
+            <a href="./login.html">
+                <button class="btn btn-primary">Login</button>
+            </a>
+            <a href="./signup.html">
+                <!-- id not working -->
+                <button id="signup" class="btn btn-outline-warning">Sign up</button>   
+            </a>
+        </div>
+    </header>
+
+    <!-- carousel -->
+    <!-- <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.pexels.com/photos/5842230/pexels-photo-5842230.jpeg?auto=compress&cs=tinysrgb&w=600" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/7184404/pexels-photo-7184404.jpeg?auto=compress&cs=tinysrgb&w=600" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/6413702/pexels-photo-6413702.jpeg?auto=compress&cs=tinysrgb&w=600" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> -->
+
+    <div id="banner" class="d-flex justify-content-between bg-light">
+        <div class="text-muted">
+            <h1 class="mb-0">FOOD</h1>
+            <h1 class="mt-0">DELIVERY</h1>
+            <p>Food delivery services offer the convenience of having meals from local restaurants brought directly to your doorstep, saving time and effort.</p>
+            <a class="text-info text-decoration-none" href="">
+                <p>Learn More</p>
+            </a>
+        </div>
+        <div style="padding-left: 10px;">
+            <img width="50%" src="./Images/delivery.png" alt="delivery">
+        </div>
+    </div>
+
+    <div class="text-center mt-1">
+        <p class="mb-1">What's on your mind</p>
+    </div>
+
+    <nav id="navbar" class="container">
+        <!-- How to remove scroll bar or keep it hidden -->
+        <button class="scroll-btn left-btn" onclick="scrollLeftContent()">&#10094;</button>
+        <!-- <button class="scroll-btn right-btn" onclick="scrollRight()">&#10095;</button> -->
+        <div class="d-flex scrollable">
+            <section id="cards" class="card m-2 mb-4 shadow">
+                <div class="card-body">
+                  <img class="w-100 rounded" src="https://media.istockphoto.com/id/2099973647/photo/mughlai-paneer-tikka-biryani-rice-pulao-with-garlic-onion-and-raita-served-in-plate-isolated.jpg?b=1&s=612x612&w=0&k=20&c=cmsGCK6dsLqEXC4dZEkXvOmfhiL48XPiwc3U69nQxUs=" alt="Biriyani">
+                  <h5 class="card-title">Biriyani</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Hyderabadi</h6>
+                  <a class="d-flex text-info text-decoration-none justify-content-end" href="./biryani/biryani.html" class="card-link">Find restaurants</a>
+                </div>
+            </section>
+    
+            <div id="cards" class="card m-2 mb-4 shadow">
+                <div class="card-body">
+                    <img class="w-100 rounded" src="https://images.pexels.com/photos/1049620/pexels-photo-1049620.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pizza">
+                    <h5 class="card-title">Pizza</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Italian</h6>
+                    <a class="d-flex text-info text-decoration-none justify-content-end" href="./pizza/pizza.html" class="card-link">Find restaurants</a>
+                </div>
+            </div>
+    
+            <div id="cards" class="card m-2 mb-4 shadow">
+                <div class="card-body">
+                    <img class="w-100 rounded" src="https://images.pexels.com/photos/1600727/pexels-photo-1600727.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Burger">
+                    <h5 class="card-title">Burger</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">American</h6>
+                    <a class="d-flex text-info text-decoration-none justify-content-end" href="#" class="card-link">Find restaurants</a>
+                </div>
+            </div>
+    
+            <div id="cards" class="card m-2 mb-4 shadow">
+                <div class="card-body">
+                    <img class="w-100 rounded" src="https://images.pexels.com/photos/2764905/pexels-photo-2764905.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Noodles">
+                    <h5 class="card-title">Noodles</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Chinese</h6>
+                    <a class="d-flex text-info text-decoration-none justify-content-end" href="#" class="card-link">Find restaurants</a>
+                </div>
+            </div>
+    
+            <div id="cards" class="card m-2 mb-4 shadow">
+                <div class="card-body">
+                    <img class="w-100 rounded" src="https://images.pexels.com/photos/1343504/pexels-photo-1343504.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Ice Cream">
+                    <h5 class="card-title">Ice Cream</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Dessert</h6>
+                    <a class="d-flex text-info text-decoration-none justify-content-end" href="#" class="card-link">Find restaurants</a>
+                </div>
+            </div>
+    
+            <div id="cards" class="card m-2 mb-4 shadow">
+                <div class="card-body">
+                    <img class="w-100 rounded" src="https://images.pexels.com/photos/20422133/pexels-photo-20422133/free-photo-of-triangular-bread-on-plate.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dosa">
+                    <h5 class="card-title">Dosa</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">South Indian</h6>
+                    <a class="d-flex text-info text-decoration-none justify-content-end" href="#" class="card-link">Find restaurants</a>
+                </div>
+            </div>
+    
+            <div id="cards" class="card m-2 mb-4 shadow">
+                <div class="card-body">
+                    <img class="w-100 rounded" src="https://images.pexels.com/photos/20446394/pexels-photo-20446394/free-photo-of-top-view-of-a-dish-in-a-frying-pan-and-lachha-bread.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Roti Curry">
+                    <h5 class="card-title">Roti Curry</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">North Indian</h6>
+                    <a class="d-flex text-info text-decoration-none justify-content-end" href="#" class="card-link">Find restaurants</a>
+                </div>
+            </div>
+    
+            <div id="cards" class="card m-2 mb-4 shadow">
+                <div class="card-body">
+                    <img class="w-100 rounded" src="https://media.istockphoto.com/id/1314329942/photo/goal-gappa-or-pani-puri.jpg?b=1&s=612x612&w=0&k=20&c=hDLQhLfDTPzZmd-sruUJoWvPyxYTtLTpZxDq8UCPY4Y=" alt="Chat">
+                    <h5 class="card-title">Chat</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Snacks</h6>
+                    <a class="d-flex text-info text-decoration-none justify-content-end" href="#" class="card-link">Find restaurants</a>
+                </div>
+            </div>
+    
+            <div id="cards" class="card m-2 mb-4 shadow">
+                <div class="card-body">
+                    <img class="w-100 rounded" src="https://images.pexels.com/photos/803963/pexels-photo-803963.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pasta">
+                    <h5 class="card-title">Pasta</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Italian</h6>
+                    <a class="d-flex text-info text-decoration-none justify-content-end" href="#" class="card-link">Find restaurants</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="scroll-btn right-btn" onclick="scrollRightContent()">&#10095;</button>
+    </nav>
+
+    <main>
+        <div id="collections" class="d-flex justify-content-between ">
+            <h2 class="mb-1">Collections</h2>
+            <a class="text-info text-decoration-none align-bottom" href="">
+                <h5>All Restaurants</h5>
+            </a>
+        </div>
+
+        <div class="d-flex">
+            <!-- How to keep width and height same without photo streatching -->
+            <section id="collection_img" class="m-4">
+                <img class="rounded-3" width="100%" style="max-height: 800px;" src="https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=600" alt="restaurant">
+                <div id="collection_info">
+                    <a class="text-white text-decoration-none" href="">
+                        <h5 class="card-title">Top Trending Spots</h5>
+                    </a>
+                    <a class="text-white text-decoration-none" href="">
+                        <h6 class="card-title">25 Places &#10095;</h6>
+                    </a>
+                </div>
+            </section>
+    
+            <section id="collection_img" class="m-4">
+                <img class="rounded-3" width="100%" style="max-height: 800px;" src="https://images.pexels.com/photos/16038511/pexels-photo-16038511/free-photo-of-cocktails-on-table-on-terrace-with-view-of-city.jpeg?auto=compress&cs=tinysrgb&w=600" alt="rooftop">
+                <div id="collection_info">
+                    <a class="text-white text-decoration-none" href="">
+                        <h5 class="card-title">Rooftop Places</h5>
+                    </a>
+                    <a class="text-white text-decoration-none" href="">
+                        <h6 class="card-title">18 Places &#10095;</h6>
+                    </a>
+                </div>
+            </section>
+
+            <section id="collection_img" class="m-4">
+                <img class="rounded-3" width="100%" style="max-height: 800px;" src="https://images.pexels.com/photos/4676640/pexels-photo-4676640.jpeg?auto=compress&cs=tinysrgb&w=600" alt="newly opened">
+                <div id="collection_info">
+                    <a class="text-white text-decoration-none" href="">
+                        <h5 class="card-title">Newly Opened Places</h5>
+                    </a>
+                    <a class="text-white text-decoration-none" href="">
+                        <h6 class="card-title">10 Places &#10095;</h6>
+                    </a>
+                </div>
+            </section>
+
+            <section id="collection_img" class="m-4">
+                <img class="rounded-3" width="100%" style="max-height: 800px;" src="https://images.pexels.com/photos/5864591/pexels-photo-5864591.jpeg?auto=compress&cs=tinysrgb&w=600" alt="date">
+                <div id="collection_info">
+                    <a class="text-white text-decoration-none" href="">
+                        <h5 class="card-title">it's a Date</h5>
+                    </a>
+                    <a class="text-white text-decoration-none" href="">
+                        <h6 class="card-title">39 Places &#10095;</h6>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="cart-position" class="m-3 position-fixed">
+        <button id="cart" class="d-flex btn btn-danger">
+            <p class="m-0 mr-1 text-dark">Cart</p>
+            <img class="ml-1" width="20px" src="./Images/shopping-cart.png" alt="cart">
+        </button>
+    </div>
+
+    <footer class="bg-dark mt-5 p-5 m-0 text-white">
+        <div>
+            <h3 class="">QuickBite</h3>
+        </div>
+        <div class="p-4">
+            <h5 class="m-0">About QuickBite</h5>
+            <div class="p-1">
+                <p class="m-0">Who We Are</p>
+                <p class="m-0">Blog</p>
+                <p class="m-0">Work With Us</p>
+                <p class="m-0">Contact Us</p>
+            </div>
+            
+        </div>
+    </footer>
+
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

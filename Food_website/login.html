@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+</head>
+<body>
+    <header class="d-flex justify-content-around text-align-center p-2 bg-dark text-white">
+        <div>
+            <a href="./index.html" class="text-decoration-none">
+                <h4 class="text-white">QuickBite</h4>
+            </a>
+        </div>
+        <input class="rounded-3 w-50" type="text" placeholder="Search">
+        <div>
+            <a href="./login.html">
+                <button class="btn btn-primary">Login</button>
+            </a>
+            <a href="./signup.html">
+                <button class="btn btn-outline-warning">Sign up</button>
+            </a>
+        </div>
+    </header>
+
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb mt-4 ms-5"> 
+          <li class="breadcrumb-item"><a class="text-dark text-decoration-none" href="./index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Login</li>
+        </ol>
+    </nav>
+
+    <div class="d-flex justify-content-center mt-1">
+        <form class="shadow-lg p-2 rounded-4">
+            <div class="m-1">
+              <input type="text" class="form-control" placeholder="Phone" aria-describedby="emailHelp">
+            </div>
+            <div class="m-1">
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <input type="checkbox"> Remember me
+            <button type="submit" class="btn btn-primary mt-1 w-100">Login</button>
+            <hr>
+            <div>
+                New to QuickBite?
+                <a class="text-decoration-none" href="./signup.html">Create account</a>
+            </div>
+        </form>
+    </div>
+
+    <footer class="bg-dark mt-5 p-5 m-0 text-white">
+        <div>
+            <h3 class="">QuickBite</h3>
+        </div>
+        <div class="p-4">
+            <h5 class="m-0">About QuickBite</h5>
+            <div class="p-1">
+                <p class="m-0">Who We Are</p>
+                <p class="m-0">Blog</p>
+                <p class="m-0">Work With Us</p>
+                <p class="m-0">Contact Us</p>
+            </div>
+            
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
