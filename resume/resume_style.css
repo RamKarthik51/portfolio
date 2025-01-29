@@ -1,0 +1,49 @@
+body{
+    margin: 0%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding:5%;
+    background-color: rgb(240, 240, 240);
+    align-items: center;
+}
+
+.header img{
+    height: 200px;
+    border-radius: 20px;
+}
+
+.personal-name{
+    text-align: left;
+}
+
+.project-header{
+    padding-left: 5%;
+}
+
+.about-me{
+    margin-right: 5%;
+    margin-left: 10%;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    margin-right: 5%;
+    margin-left: 10%;
+}
+
+.skill-img{
+    height: 75px;
+}
+
+
+
+
+.footer{
+    padding:5%;
+    background-color: rgb(240, 240, 240);
+}
